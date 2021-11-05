@@ -1,4 +1,4 @@
 ﻿  Database.cpp
-  maintenance.cpp
-  Generating Code...
+C:\Users\d54442\source\repos\maintenance\maintenance\Database.cpp(128,22): warning C4154: deletion of an array expression; conversion to pointer supplied
+C:\Users\d54442\source\repos\maintenance\maintenance\Database.cpp(129,22): warning C4154: deletion of an array expression; conversion to pointer supplied
   maintenance.vcxproj -> C:\Users\d54442\source\repos\maintenance\Debug\maintenance.exe

@@ -3,6 +3,7 @@
 
 #include "framework.h"
 #include "maintenance.h"
+#include "Database.h";
 
 #define MAX_LOADSTRING 100
 
@@ -10,6 +11,9 @@
 HINSTANCE hInst;                                // current instance
 WCHAR szTitle[MAX_LOADSTRING];                  // The title bar text
 WCHAR szWindowClass[MAX_LOADSTRING];            // the main window class name
+const char* dir = "C:\\Users\\d54442\\source\\repos\\test.db";
+
+myDatabase db(dir);
 
 // Forward declarations of functions included in this code module:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
@@ -124,7 +128,9 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
     switch (message)
-    {
+    {    
+    case WM_CREATE:
+        
     case WM_COMMAND:
         {
             int wmId = LOWORD(wParam);
