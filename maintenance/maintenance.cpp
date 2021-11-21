@@ -11,9 +11,14 @@
 HINSTANCE hInst;                                // current instance
 WCHAR szTitle[MAX_LOADSTRING];                  // The title bar text
 WCHAR szWindowClass[MAX_LOADSTRING];            // the main window class name
-const char* dir = "C:\\Users\\d54442\\source\\repos\\test.db";
 
+const char* dir = "C:\\Users\\d54442\\source\\repos\\test.db";
+const char* table_name = "COMPANY_NAMES";
+const char* condition = "ID = 1";
+const unsigned char* result[100];
+const char* one_result;
 myDatabase db(dir);
+
 
 // Forward declarations of functions included in this code module:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
@@ -130,6 +135,12 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     switch (message)
     {    
     case WM_CREATE:
+        //db.name_tables();
+        //db.add_data_to_table(0, "'LookOil','Лукойл'");
+        //db.add_data_to_table(0, "'LookOil2','Лукойл2'");
+        //db.extract_column_from_table(table_name, 1, result);
+        //db.extract_from_column(table_name, 1, condition, one_result);
+        db.update_data_in_table(0, 1, "SPD", 0, "1");
         
     case WM_COMMAND:
         {

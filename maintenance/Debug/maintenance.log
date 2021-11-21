@@ -1,4 +1,13 @@
-﻿  Database.cpp
-C:\Users\d54442\source\repos\maintenance\maintenance\Database.cpp(128,22): warning C4154: deletion of an array expression; conversion to pointer supplied
-C:\Users\d54442\source\repos\maintenance\maintenance\Database.cpp(129,22): warning C4154: deletion of an array expression; conversion to pointer supplied
+﻿  maintenance.cpp
+C:\Users\d54442\source\repos\maintenance\maintenance\maintenance.cpp(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Database.cpp
+C:\Users\d54442\source\repos\maintenance\maintenance\Database.cpp(281,3): warning C4477: 'snprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'std::string'
+C:\Users\d54442\source\repos\maintenance\maintenance\Database.cpp(281,3): warning C4477: 'snprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'std::string *'
+C:\Users\d54442\source\repos\maintenance\maintenance\Database.cpp(281,3): warning C4477: 'snprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 4 has type 'std::string'
+C:\Users\d54442\source\repos\maintenance\maintenance\Database.cpp(303,11): warning C4150: deletion of pointer to incomplete type 'sqlite3'; no destructor called
+C:\Users\d54442\source\repos\maintenance\packages\sqlite3_c_plus_plus.1.0.3\build\native\include\sqlite3.h(242): message : see declaration of 'sqlite3'
+C:\Users\d54442\source\repos\maintenance\maintenance\Database.cpp(305,22): warning C4154: deletion of an array expression; conversion to pointer supplied
+C:\Users\d54442\source\repos\maintenance\maintenance\Database.cpp(306,22): warning C4154: deletion of an array expression; conversion to pointer supplied
+C:\Users\d54442\source\repos\maintenance\maintenance\Database.cpp(307,22): warning C4154: deletion of an array expression; conversion to pointer supplied
+  Generating Code...
   maintenance.vcxproj -> C:\Users\d54442\source\repos\maintenance\Debug\maintenance.exe
