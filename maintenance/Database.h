@@ -5,7 +5,18 @@
 #include <array>
 #include <locale.h>
 
-
+/*
+ToDo:
+- use chars arrays instead of string
+- add database version control
+- chande methods 'name_tables', 'name_fields', 'define_fields'. The names and types has to come externally from related classes through controller
+- use global statement instead of private statements
+- use try catch during tables/field naming and definition
+- use try catch during insert/update/delete/get data methods
+- add error logs
+- add method to check if statemenet is overloaded
+- add locale
+*/
 	class myDatabase
 	{
 	private:
@@ -16,6 +27,10 @@
 		std::string table_names[table_numbers];
 		std::string field_names[table_numbers][table_field_numbers];
 		std::string field_types[table_numbers][table_field_numbers];
+
+		const char* names_tables[table_numbers];
+		const char* names_fields[table_numbers][table_field_numbers];
+		const char* types_fields[table_numbers][table_field_numbers];
 
 	public:
 		
@@ -36,7 +51,7 @@
 
 		//Edit database
 		bool update_data_in_table(int, int, const char*,int, const char*);
-
+		
 		//Close database
 		bool close_db();
 		~myDatabase();

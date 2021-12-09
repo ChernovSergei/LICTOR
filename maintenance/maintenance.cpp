@@ -137,10 +137,10 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     case WM_CREATE:
         //db.name_tables();
         //db.add_data_to_table(0, "'LookOil','Лукойл'");
-        //db.add_data_to_table(0, "'LookOil2','Лукойл2'");
+        //db.add_data_to_table(0, "'SPD','SPD_rus'");
         //db.extract_column_from_table(table_name, 1, result);
         //db.extract_from_column(table_name, 1, condition, one_result);
-        db.update_data_in_table(0, 1, "SPD", 0, "1");
+        //db.update_data_in_table(0, 0, "1", 1, "INK");
         
     case WM_COMMAND:
         {
@@ -168,6 +168,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         }
         break;
     case WM_DESTROY:
+        db.~myDatabase();
         PostQuitMessage(0);
         break;
     default:
