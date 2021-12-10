@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 ﻿  Database.cpp
 C:\Users\d54442\source\repos\maintenance\maintenance\Database.cpp(266,8): warning C4101: 'sql_statement_char': unreferenced local variable
   maintenance.cpp
 C:\Users\d54442\source\repos\maintenance\maintenance\maintenance.cpp(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   Generating Code...
+=======
+﻿  maintenance.cpp
+>>>>>>> main_window
   maintenance.vcxproj -> C:\Users\d54442\source\repos\maintenance\Debug\maintenance.exe
